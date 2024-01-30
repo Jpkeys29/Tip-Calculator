@@ -1,7 +1,7 @@
 function Button() {
     return(
         <div>
-            This is the 'Button'component 
+            <button>Reset</button> 
         </div>
     )
 }
