@@ -1,9 +1,14 @@
-function SelectPercent() {
+
+export default function SelectPercent() {
     return(
         <div>
-            This is the 'Select percent' component 
+            <select>
+                <option>Dissatisfied (0%)</option>
+                <option>It was okay (5%)</option>
+                <option>It was good (10%) </option>
+                <option>Absolutely amazing! (20%)</option>
+            </select>
         </div>
-    )
+    );
 }
 
-export default SelectPercent;

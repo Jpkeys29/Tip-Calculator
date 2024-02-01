@@ -1,7 +1,9 @@
-function Bill(){
-    return(
-        <div>This is the 'Bill' Component</div>
-    )
-}
 
-export default Bill;
+export default function Bill(){
+    return(
+        <div >
+            <label>How much was the bill?</label>
+            <input type="text" placeholder="Bill value" />
+        </div>
+    );
+}

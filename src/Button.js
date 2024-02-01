@@ -1,4 +1,4 @@
-function Button() {
+export default function Button() {
     return(
         <div>
             <button>Reset</button> 
@@ -6,4 +6,3 @@ function Button() {
     )
 }
 
-export default Button;
