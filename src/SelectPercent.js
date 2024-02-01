@@ -1,7 +1,8 @@
 
-export default function SelectPercent() {
+export default function SelectPercent({children}) {
     return(
         <div>
+            <label>{children}</label>
             <select>
                 <option>Dissatisfied (0%)</option>
                 <option>It was okay (5%)</option>
