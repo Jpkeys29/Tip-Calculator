@@ -1,7 +1,7 @@
-export default function Output() {
+export default function Output({cuenta}) {
     return (
         <div>
-            <h3>You pay()   </h3>
+            <h3>You pay({cuenta})   </h3>
         </div>
     )
 }

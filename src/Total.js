@@ -8,10 +8,10 @@ export default function Total() {
     const [cuenta, setCuenta ] = useState("");
     return(
         <div className="statements">
-            <Bill />
+            <Bill cuenta={cuenta} onSetCuenta={setCuenta} />
             <SelectPercent>How did you like the service?</SelectPercent>
             <SelectPercent>How did your friend like the service?</SelectPercent>
-            <Output />
+            <Output cuenta={cuenta} />
             <div><Button /></div>        
         </div>
     );
