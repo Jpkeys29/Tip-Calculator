@@ -1,7 +1,7 @@
-export default function Output({cuenta, percent}) {
+export default function Output({cuenta, tip}) {
     return (
         <div>
-            <h3>You pay({cuenta} + {percent}) </h3>
+            <h3>You pay ${cuenta + tip} (${cuenta} + ${tip} tip) </h3>
         </div>
     )
 }
