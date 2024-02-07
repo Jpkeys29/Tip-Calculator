@@ -12,8 +12,8 @@ export default function Total() {
         <div className="statements">
             <Bill cuenta={cuenta} onSetCuenta={setCuenta} />
             <SelectPercent percent={mypercent} onSelect={setMyPercent} >How did you like the service?</SelectPercent>
-            <SelectPercent>How did your friend like the service?</SelectPercent>
-            <Output cuenta={cuenta} percent={mypercent}/>
+            <SelectPercent percent={friendpercent} onSelect={setFriendPercent} >How did your friend like the service?</SelectPercent>
+            <Output cuenta={cuenta} percent={mypercent} friendpercent={friendpercent} />
             <div><Button /></div>        
         </div>
     );
