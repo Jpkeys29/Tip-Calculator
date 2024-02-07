@@ -10,7 +10,7 @@ export default function Total() {
     const [friendpercent, setFriendPercent] = useState(0);
 
     // const tip = cuenta * ((mypercent + friendpercent)/2)/100;
-    const tip = cuenta * (mypercent/100) + cuenta * (friendpercent/100);
+    const tip = cuenta * ((mypercent/100) + (friendpercent/100));
 
     return(
         <div className="statements">
