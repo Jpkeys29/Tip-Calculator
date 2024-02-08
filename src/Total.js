@@ -11,6 +11,12 @@ export default function Total() {
 
     // const tip = cuenta * ((mypercent + friendpercent)/2)/100;
     const tip = cuenta * ((mypercent/100) + (friendpercent/100));
+    
+    function handleReset(){
+        setCuenta("")
+        setMyPercent(0)
+        setFriendPercent(0)
+    }
 
     return(
         <div className="statements">
@@ -18,7 +24,7 @@ export default function Total() {
             <SelectPercent percent={mypercent} onSelect={setMyPercent} >How did you like the service?</SelectPercent>
             <SelectPercent percent={friendpercent} onSelect={setFriendPercent} >How did your friend like the service?</SelectPercent>
             <Output cuenta={cuenta} percent={mypercent} friendpercent={friendpercent} tip={tip}/>
-            <div><Button  /></div>        
+            <div><Button onReset={handleReset} /></div>        
         </div>
     );
 }

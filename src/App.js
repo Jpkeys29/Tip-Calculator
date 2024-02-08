@@ -6,6 +6,7 @@ import './styles.css';
 export default function App() {
   return(
     <div className="statements" >
+      <img></img>
       <Total />
     </div>
   )

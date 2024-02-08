@@ -1,7 +1,9 @@
-export default function Button() {
+import { useState } from "react";
+
+export default function Button({onReset}) {
     return(
         <div>
-            <button>Reset</button> 
+            <button onClick={onReset}>Reset</button> 
         </div>
     )
 }
